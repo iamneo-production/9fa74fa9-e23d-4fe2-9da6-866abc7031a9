@@ -33,7 +33,6 @@ export default function () {
             style={{ textAlign: "center" }}
           >
             {" "}
-            {/* <h2> <img src={download1} style={{width:'48px',height:'55px'}}/></h2> */}
             <div><h5><TelegramIcon style={{ fontSize: '30px', color: '#1976d2' }} /> Contact Form</h5></div>
           </MenuItem>
 
