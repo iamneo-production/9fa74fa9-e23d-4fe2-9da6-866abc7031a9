@@ -21,11 +21,10 @@ export default function ContactForm() {
         const data = new FormData(event.currentTarget);
         event.preventDefault();
         console.log({
+            name:data.get('name'),
             email: data.get('email'),
-            firstName: data.get('firstName'),
-            lastName: data.get('lastName'),
-            mobileNumber: data.get('mobileNumber'),
-            address: data.get('address')
+            message: data.get('message'),
+            subject: data.get('subject')
 
         });
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(data.get('email'))) {
@@ -38,10 +37,10 @@ export default function ContactForm() {
                 method: 'post',
                 url:'http://localhost:3000/contact',
                 data:{
+                    name:data.get('name'),
                     email: data.get('email'),
-                    firstName: data.get('name'),
-                    mobileNumber: data.get('subject'),
-                    address: data.get('message')
+                    subject: data.get('subject'),
+                    message: data.get('message'),
         
                 }
              }
