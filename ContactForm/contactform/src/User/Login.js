@@ -27,7 +27,7 @@ export default function SignIn(props) {
         } else {
             setErrorPassword(true)
         }
-        if(!errorEmail && data.get('email') === 'abc@gmail.com' && data.get('password') === 'abc'){
+        if(!errorEmail && data.get('email') === 'admin@gmail.com' && data.get('password') === 'admin@123'){
             toast('Login Successfull')
             setTimeout(()=>{
                 props.setLoginpage(false);
