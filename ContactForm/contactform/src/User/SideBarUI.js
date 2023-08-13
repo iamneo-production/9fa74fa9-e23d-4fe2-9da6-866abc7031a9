@@ -8,7 +8,7 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { Button } from '@mui/material';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import Telegram from '../Image/telegram-rise2-2.gif'
-import TableView from './Admin/TableView';
+// import TableView from './Admin/TableView';
 export default function () {
   const { collapseSidebar } = useProSidebar();
   const [loginpage, setLoginpage] = useState(false);
@@ -47,7 +47,7 @@ export default function () {
           <div><h2><TelegramIcon style={{ fontSize: '50px', color: '#1976d2' }} /> Contact Form</h2></div>
           {loginpage ? <Login setLoginpage={setLoginpage} loginpage={loginpage} setAdminTableView={setAdminTableView}/> : ''}
           {contactFormpage ? <ContactForm /> : ''}
-          {adminTableView ? <TableView></TableView> :''}
+          {/* {adminTableView ? <TableView></TableView> :''} */}
         </h1>
       </main>
     </div>

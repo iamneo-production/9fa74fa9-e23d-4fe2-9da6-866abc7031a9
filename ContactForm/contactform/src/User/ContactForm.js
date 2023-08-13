@@ -21,13 +21,10 @@ export default function ContactForm() {
         const data = new FormData(event.currentTarget);
         event.preventDefault();
         console.log({
-            data:{
-                name:data.get('name'),
-                email: data.get('email'),
-                subject: data.get('subject'),
-                message: data.get('message'),
-    
-            }
+            name:data.get('name'),
+            email: data.get('email'),
+            message: data.get('message'),
+            subject: data.get('subject')
 
         });
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(data.get('email'))) {
